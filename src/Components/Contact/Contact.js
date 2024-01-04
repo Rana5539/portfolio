@@ -33,13 +33,13 @@ function Contact() {
         display:'flex',
         mt:5,
         borderTop:'1px solid #63C5DA',
-        boxShadow: `0 4px 8px rgba(0, 123, 255, 0.3)`,}}>
-        <Box sx={{m:'auto', textAlign:"center"}}>
+        boxShadow: `0 4px 8px rgba(0, 123, 255, 0.3)`}}>
+        <Box sx={{m:'auto', textAlign:"center"}} >
             <Typography sx={{
                 color:'#63C5DA', 
                 fontFamily:'Poppins', 
                 fontSize:'18px', 
-                fontWeight:'300'}} id='contact'>Waqar Akram</Typography>
+                fontWeight:'300'}} >Waqar Akram</Typography>
 
 <Box sx={{justifyContent:'space-between', mt:1}}>
 <Link
