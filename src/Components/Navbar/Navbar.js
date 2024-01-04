@@ -5,8 +5,8 @@ import './body.css';
 
 function Navbar() {
   const nav = [
-    { text: 'Contact' },
-    { text: 'Skills', targetId: 'skillsImage' }, // Add targetId for Skills
+    { text: 'Contact', targetId:'contact' },
+    { text: 'Skills', targetId: 'skillsImage' }, 
     { text: 'Projects', targetId:'Project' },
     { text: 'Experience',targetId: 'Exp' },
     { text: 'Designs'  },

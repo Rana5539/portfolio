@@ -39,7 +39,7 @@ function Contact() {
                 color:'#63C5DA', 
                 fontFamily:'Poppins', 
                 fontSize:'18px', 
-                fontWeight:'300'}}>Waqar Akram</Typography>
+                fontWeight:'300'}} id='contact'>Waqar Akram</Typography>
 
 <Box sx={{justifyContent:'space-between', mt:1}}>
 <Link
