@@ -26,7 +26,7 @@ function Fiverr() {
         </Box>
         
    </Box>
-   <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2 }}>Worked on graphic designing now working as a Frontend Developer on fiverr.</Typography>
+   <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2 }}> Working as a Frontend Developer on fiverr from 2 years.</Typography>
    <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2, display:'flex'}}>Skills  <Typography sx={{ml:1, fontFamily:'Inria Sans', fontWeight:'200', color:'grey'}}>Coreldraw , Photoshop , JavaScript , ReactJs , Material UI</Typography></Typography>
     </Box>
     </>
