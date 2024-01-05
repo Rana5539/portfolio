@@ -4,7 +4,7 @@ const img = require('./images/logo.png')
 function Ics() {
   return (
     <>
-    <Box sx={{width:'60%', 
+    <Box sx={{width:'30%', 
     height:'auto',  
     borderRadius:'15px',
     bgcolor:'rgb(0, 3, 20)',
@@ -16,18 +16,17 @@ function Ics() {
     '@media screen and (max-width: 1000px)': {
  width:'80%',
           },}}>
-   <Box sx={{width:'95%', m:'auto',mt:1.5, display:'flex'}}>
-        <img src={img} width={'60vh'}></img>
-        <Box sx={{ml:1}}>
-            <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'300'}}>Inter-ICS</Typography>
-            <Typography sx={{color: 'grey', fontSize:'15px', fontFamily:'Inria Sans', lineHeight:1}}>Garisson college Lahore</Typography>
-            <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans'}}>2017 - 2019</Typography>
-            
-        </Box>
+           <Box style={{ textAlign: 'center' }}>
+      <img src={img} width={'60vh'} style={{ margin: 'auto', display: 'block', marginTop:4}} alt="Your Image" />
+    </Box>
+  
         
-   </Box>
-   <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2, display:'flex'}}>Grade  <Typography sx={{ml:1, fontFamily:'Inria Sans', fontWeight:'200', color:'grey'}}>58%</Typography></Typography>
-   <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2 }}>I have completed my intermediate in computer sciences from lahore garisson college</Typography>
+       
+            <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'300', textAlign:'center',mt:1}}>Inter-ICS</Typography>
+            <Typography sx={{color: 'grey', fontSize:'15px', fontFamily:'Inria Sans', lineHeight:1, textAlign:'center'}}>Garisson College Lahore</Typography>
+            <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans', textAlign:'center'}}>2017 - 2019</Typography>
+     <Typography sx={{ fontFamily:'Inria Sans', fontWeight:'200', color:'grey', textAlign:'center'}}>Marks 58%</Typography>
+   <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200',mt:2 , textAlign:'center',pl:1.1,pr:1.1}}>I have completed my intermediate in computer sciences from lahore garisson college</Typography>
    
     </Box>
     </>
