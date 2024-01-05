@@ -4,7 +4,7 @@ import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 const img = require('./images/unnamed.jpg')
-const pdfUrl = require('./pdf/pdf.pdf')
+const pdfUrl = require('./pdf/waqar.pdf')
 const handleButtonClick = () => {
   window.open(pdfUrl, '_blank');
 };
