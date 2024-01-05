@@ -73,7 +73,7 @@ function About() {
             <Typography sx={{color:'white', fontFamily:'Poppins', fontSize:'25px',lineHeight:1}}>Waqar Akram </Typography>
             <Typography sx={{color:'#63C5DA', fontFamily:'Inria Sans'}}>Front end Developer</Typography>
             <Typography sx={{color:'#63C5DA', fontFamily:'Inria Sans'}}>UI/UX designer</Typography>
-            <Typography sx={{color:'#BEBEBE', fontFamily:'Poppins', fontWeight:'200', fontSize:'14px',mt:1}}>I am a motivated and versatile individual, always eager to take new challenges.With a passion for learning. I am a dedicated individual for front end development and ui/ux designing, With a positive attitude and a growth mindset , i am ready to make a meaningful contribution andachieve great things. I always try to achieve 100% efficiency and accuracy in my work to impress my clients. To know further more about me contact me , check out my proven projects or scroll down  </Typography>
+            <Typography sx={{color:'#BEBEBE', fontFamily:'Poppins', fontWeight:'200', fontSize:'14px',mt:1}}>I am a motivated and versatile individual, always eager to take new challenges. With a passion for learning. I am a dedicated individual for front end development and ui/ux designing, With a positive attitude and a growth mindset , i am ready to make a meaningful contribution and achieve great things. I always try to achieve 100% efficiency and accuracy in my work to impress my clients. To know further more about me contact me , check out my proven projects or scroll down  </Typography>
             <Box sx={{mt:2, display:'flex','@media screen and (max-width: 1000px)': {
  justifyContent:'space-evenly',
           },}}>
