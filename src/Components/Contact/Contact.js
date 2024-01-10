@@ -32,7 +32,7 @@ function Contact() {
         alignItems:'center',
         display:'flex',
         mt:5,
-        borderTop:'1px solid #63C5DA',
+        borderTop:'1px dashed #63C5DA',
         boxShadow: `0 4px 8px rgba(0, 123, 255, 0.3)`}}>
         <Box sx={{m:'auto', textAlign:"center"}} >
             <Typography sx={{

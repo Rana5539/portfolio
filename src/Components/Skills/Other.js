@@ -13,7 +13,7 @@ function Other() {
     width:'50vh', 
     height:'30vh', 
     bgcolor:'rgb(0, 3, 20)',
-    border:'1px solid #63C5DA', 
+    border:'1px dashed #63C5DA', 
     boxShadow: `0 4px 8px rgba(0, 123, 255, 0.3)`,
     borderRadius:'15px',
     textAlign:'center',

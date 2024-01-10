@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import About from "./Components/Aboutus/About";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Components/Education/Education";
@@ -11,7 +12,7 @@ import Skill from "./Components/Skills/Skill";
 function App() {
   return (
    <>
-   
+   <Box sx={{backgroundImage: 'linear-gradient(to right, rgb(5, 14, 49) , black )'}}>
    <Navbar/>
    <Responsive/>
   <About/>
@@ -20,6 +21,7 @@ function App() {
   <Project/>
   <Education/>
   <Contact/>
+  </Box>
    </>
   );
 }

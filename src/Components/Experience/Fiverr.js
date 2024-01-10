@@ -6,7 +6,7 @@ function Fiverr() {
     <>
     <Box sx={{width:'60%', 
     height:'auto', 
-    border:'1px solid #63C5DA', 
+    border:'1px dashed #63C5DA', 
     borderRadius:'15px',
     bgcolor:'rgb(0, 3, 20)',
     boxShadow: `0 4px 8px rgba(0, 123, 255, 0.3)`,
