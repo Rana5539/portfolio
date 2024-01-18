@@ -103,7 +103,7 @@ function Portfo() {
             Portfolio
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2, fontFamily:'Inria Sans',color:'white'}}>
-            This project is currently you are observing that is my personal portfolio and other two mentioned projects are under development.
+            This project is currently you are observing that is my personal portfolio and the other mentioned project is under development.
           </Typography>
         </Box>
       </Modal>
