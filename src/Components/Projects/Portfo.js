@@ -31,7 +31,7 @@ function Portfo() {
     m:'auto', 
     justifyContent:'space-evenly',
     mt:5,
-    '@media screen and (max-width: 650px)': {
+    '@media screen and (max-width: 780px)': {
       flexDirection:'column',
       alignItems:'center'
     },}}>

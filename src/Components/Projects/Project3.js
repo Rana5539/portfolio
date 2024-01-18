@@ -26,7 +26,7 @@ function Project2() {
             transform: 'translateY(-10px)',
            
           },
-        '@media screen and (max-width: 650px)':{
+        '@media screen and (max-width: 780px)':{
           mt:4
         }}}
         onClick={onClick}
