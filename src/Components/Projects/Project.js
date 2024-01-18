@@ -2,6 +2,7 @@ import { Typography } from '@mui/material'
 import React from 'react'
 import Portfo from './Portfo'
 
+
 function Project() {
   return (
     <>
@@ -32,5 +33,4 @@ function Project() {
     </>
   )
 }
-
 export default Project

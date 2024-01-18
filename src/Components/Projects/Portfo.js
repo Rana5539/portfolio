@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-import Project2 from './Project2'
 import Modal from '@mui/material/Modal';
+import Project3 from './Project3'
 const img = require('./images/c.jpg')
 const data = [{text:'React js'},
 {text:'Material UI'},
@@ -13,9 +13,12 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 300,
-  bgcolor: '#63C5DF',
+  bgcolor: 'rgb(0,0,0,0.9)',
   boxShadow: 24,
   p: 3,
+  borderRadius:'15px',
+  border:'1px solid white',
+  
 };
 function Portfo() {
   const [open, setOpen] = React.useState(false);
@@ -87,7 +90,7 @@ function Portfo() {
               ))}
             </Box>
             </Box>
-        <Project2/>
+        <Project3/>
     </Box>
     <Modal
         open={open}
@@ -96,11 +99,11 @@ function Portfo() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2" sx={{fontFamily:'Poppins'}}>
+          <Typography id="modal-modal-title" variant="h6" component="h2" sx={{fontFamily:'Poppins',color:'white'}}>
             Portfolio
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2, fontFamily:'Inria Sans'}}>
-            This project is currently you are observing that is my personal portfolio
+          <Typography id="modal-modal-description" sx={{ mt: 2, fontFamily:'Inria Sans',color:'white'}}>
+            This project is currently you are observing that is my personal portfolio and other two mentioned projects are under development.
           </Typography>
         </Box>
       </Modal>

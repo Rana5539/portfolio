@@ -1,72 +1,98 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import MenuIcon from '@mui/icons-material/Menu';
-import LightIcon from '@mui/icons-material/Light';
-export default function SwipeableTemporaryDrawer() {
-  const [state, setState] = React.useState({
-    left: false,
-  });
+import { styled, alpha } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import Divider from '@mui/material/Divider';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+const StyledMenu = styled((props) => (
+  <Menu
+    elevation={0}
+    anchorOrigin={{
+      vertical: 'bottom',
+      horizontal: 'right',
+    }}
+    transformOrigin={{
+      vertical: 'top',
+      horizontal: 'right',
+    }}
+    {...props}
+  />
+))(({ theme }) => ({
+  '& .MuiPaper-root': {
+    borderRadius: 6,
+    marginTop: theme.spacing(1),
+    width: '100%',
+    minHeight: '200px',
+    minWidth: '240px', 
+    color: 'white',
+    boxShadow:
+      'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+    backgroundColor: 'rgba(0, 0, 0, 0.95)',
+    '& .MuiMenu-list': {
+      padding: '4px 0',
+    },
+    '& .MuiMenuItem-root': {
+      '& .MuiSvgIcon-root': {
+        fontSize: 18,
+        color: theme.palette.text.secondary,
+        marginRight: theme.spacing(1.5),
+      },
+      '&:active': {
+        backgroundColor: alpha(
+          theme.palette.primary.main,
+          theme.palette.action.selectedOpacity,
+        ),
+      },
+    },
+  },
+}));
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event &&
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
-    ) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
+export default function CustomizedMenus() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
   };
-
-  const list = (anchor) => (
-    <Box
-      sx={{
-        width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250,
-        transitionDuration: '0.8s',
-      }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List sx={{textAlign:'center', fontSize:'18px', fontFamily:'Poppins',display:'flex',ml:'17vh'}}><LightIcon/>Portfolio</List>
-      <List sx={{textAlign:'center', fontFamily:'Inria Sans'}}>
-       Scroll down to know more about me
-      </List>
-      
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-          padding: '8px',
-        }}
-      ></Box>
-    </Box>
-  );
-
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
-    <div>
-      {['top'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button
-            onClick={toggleDrawer(anchor, true)}
-            startIcon={<MenuIcon sx={{ color: 'white' }} />}
-          >
-            {String.fromCharCode(160)}
-          </Button>
-          <SwipeableDrawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-            onOpen={toggleDrawer(anchor, true)}
-          >
-            {list(anchor)}
-          </SwipeableDrawer>
-        </React.Fragment>
-      ))}
-    </div>
+    <>
+      <IconButton
+        id="demo-customized-button"
+        aria-controls={open ? 'demo-customized-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+        sx={{
+          transition: 'transform 2s ease-in-out',
+          color:"white",
+          mr:1,
+          '&:hover': {
+            transform: 'scale(1.01)',
+          },
+        }}
+      >
+        {open ? <CloseRoundedIcon sx={{fontSize:'30px'}}/> : <MenuRoundedIcon sx={{fontSize:'30px'}}/>}
+      </IconButton>
+      <StyledMenu
+        id="demo-customized-menu"
+        MenuListProps={{
+          'aria-labelledby': 'demo-customized-button',
+        }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose} disableRipple sx={{fontFamily:'Poppins',display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',mt:2,fontSize:'18px',textAlign:'center'}}> 
+          Scroll down to know<br/>  more about me
+        </MenuItem>
+       
+      </StyledMenu>
+    </>
   );
 }

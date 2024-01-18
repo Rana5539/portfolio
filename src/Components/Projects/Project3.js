@@ -1,12 +1,12 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-const img = require('./images/Capture.jpg')
+const img = require('./images/Capture1.jpg')
 const data = [{text:'React js'},
 {text:'Material UI'},
-{text:'JavaScript'}
+{text:'Hubspot'}
 ]
 function Project2() {
-  const project = 'https://plants-website-nu.vercel.app/'
+  const project = 'https://build-waqar-akrams-projects.vercel.app/'
   const onClick = () => {
     window.open(project, '_blank');
   };
@@ -48,13 +48,13 @@ function Project2() {
             fontFamily:'Poppins', 
             fontWeight:'300', 
             mt:2,ml:2, 
-            fontSize:'18px'}}>Port Green</Typography>
+            fontSize:'18px'}}>Real Estate</Typography>
             <Typography sx={{
               color:'grey', 
               fontFamily:'Inria Sans',
               ml:2, 
               fontSize:'13px'}}>Under development</Typography>
-              <Typography sx={{color:'whitesmoke', fontFamily:'Poppins', fontWeight:'300', ml:2, fontSize:'15px'}}>It is an ecommerce project where we can buy plants online , this project is under development with half done </Typography>
+              <Typography sx={{color:'whitesmoke', fontFamily:'Poppins', fontWeight:'300', ml:2, fontSize:'15px'}}>It is a Real Estate project where you can buy and sell your property on the other hand you can avail many services. </Typography>
               <Box sx={{m:'auto', display:'flex', justifyContent:'space-evenly',mt:2}}>
               {data.map((a)=>(
                 <Box sx={{ 
