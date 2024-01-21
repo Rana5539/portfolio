@@ -6,7 +6,7 @@ const data = [{text:'React js'},
 {text:'Hubspot'}
 ]
 function Project2() {
-  const project = 'https://build-waqar-akrams-projects.vercel.app/'
+  const project = 'https://build-jlwf.vercel.app/'
   const onClick = () => {
     window.open(project, '_blank');
   };
