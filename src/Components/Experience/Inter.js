@@ -1,9 +1,16 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const img = require('./images/icons8-backend-development-64.png')
 function Inter() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
   return (
-    <>
+    <><div data-aos='fade-up'>
     <Box sx={{width:'60%', 
     height:'auto', 
     border:'1px dashed #63C5DA', 
@@ -26,7 +33,7 @@ function Inter() {
    </Box>
    <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2 }}>Worked on the Frontend of the web applications using ReactJs and Material UI.</Typography>
    <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2, display:'flex'}}>Skills  <Typography sx={{ml:1, fontFamily:'Inria Sans', fontWeight:'200', color:'grey',pr:1}}>HTML , CSS , JavaScript , ReactJs , Material UI , Bootstrap.</Typography></Typography>
-    </Box>
+    </Box></div>
     </>
   )
 }

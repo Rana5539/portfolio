@@ -1,5 +1,7 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const data = [{text:'React js', src:require('./images/physics.png')},
                {text:'CSS', src: require('./images/css-3.png')},
                {text:'HTML', src:require('./images/html-5.png')}
@@ -14,8 +16,14 @@ const data = [{text:'React js', src:require('./images/physics.png')},
          ]  
          const img = require('./images/icons8-chakra-ui-48.png')        
 function Frontend() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
   return (
     <>
+    <div data-aos='zoom-in'>
     <Box sx={{
     width:'50vh', 
     height:'40vh', 
@@ -132,6 +140,7 @@ fontWeight:'300'}}>Frontend</Typography>
   Chakra UI
 </Box>
 </Box>
+</div>
     </>
   )
 }

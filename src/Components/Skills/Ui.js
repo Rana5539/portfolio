@@ -1,13 +1,20 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React ,{useEffect}from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const data = [{text:'Adobe XD', src:require('./images/icons8-adobe-xd-48.png')},
-               {text:'CorelDraw', src: require('./images/icons8-corel-draw-67.png')},
-               
+               {text:'CorelDraw', src: require('./images/icons8-corel-draw-67.png')},  
             ] 
             const img = require('./images/icons8-figma-48.png')
 function Ui() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
   return (
     <>
+    <div data-aos='fade-right'>
     <Box sx={{
     width:'50vh', 
     height:'40vh', 
@@ -74,7 +81,7 @@ fontWeight:'300'}}>UI/UX</Typography>
 <img src={img} style={{ width: '3vh', marginRight: 1 }}  alt="Skills" />
   Figma
 </Box>
-          </Box>
+          </Box></div>
     </>
   )
 }

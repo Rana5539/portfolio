@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Portfo from './Portfo'
 
@@ -18,6 +18,7 @@ function Project() {
 >
   Projects
 </Typography>
+<Box sx={{width:'90%',m:'auto'}}>
 <Typography
   sx={{
     color: '#BEBEBE',
@@ -28,7 +29,7 @@ function Project() {
   }}
 >
   I have worked on a wide range of projects. Most of them were web apps. Here are some of my projects i have worked on
-  </Typography>
+  </Typography></Box>
   <Portfo/>
     </>
   )

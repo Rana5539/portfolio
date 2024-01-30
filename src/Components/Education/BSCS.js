@@ -1,9 +1,16 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const img = require('./images/Untitled-1.png')
 function BSCS() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
   return (
-    <>
+    <><div data-aos='zoom-in'>
     <Box sx={{width:'30%', 
     height:'auto',  
     borderRadius:'15px',
@@ -28,7 +35,7 @@ function BSCS() {
      <Typography sx={{ fontFamily:'Inria Sans', fontWeight:'200', color:'grey', textAlign:'center'}}>CGPA 3.1</Typography>
    <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200',mt:2 , textAlign:'center',pl:1.1,pr:1.1}}>I have recently done my bachelors in computer sciences from lahore garisson university</Typography>
    
-    </Box>
+    </Box></div>
     </>
   )
 }

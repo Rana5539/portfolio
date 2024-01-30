@@ -4,12 +4,11 @@ import LightIcon from '@mui/icons-material/Light';
 import './body.css';
 
 function Navbar() {
+  
   const nav = [
-    { text: 'Contact', targetId:'contact' },
     { text: 'Skills', targetId: 'skillsImage' }, 
     { text: 'Projects', targetId:'Project' },
     { text: 'Experience',targetId: 'Exp' },
-    { text: 'Designs'  },
     { text: 'Education',targetId: 'Edu'  }
   ];
 

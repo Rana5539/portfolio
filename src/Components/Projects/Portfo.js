@@ -1,7 +1,9 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React,{useEffect} from 'react'
 import Modal from '@mui/material/Modal';
 import Project3 from './Project3'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const img = require('./images/c.jpg')
 const data = [{text:'React js'},
 {text:'Material UI'},
@@ -21,11 +23,17 @@ const style = {
   
 };
 function Portfo() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
     <>
+    <div data-aos='flip-right'>
     <Box sx={{
     display:"flex", 
     m:'auto', 
@@ -106,7 +114,7 @@ function Portfo() {
             This project is currently you are observing that is my personal portfolio and the other mentioned project is under development.
           </Typography>
         </Box>
-      </Modal>
+      </Modal></div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Matric from './Matric'
 import Ics from './Ics'
@@ -18,6 +18,7 @@ function Education() {
 >
   Education
 </Typography>
+<Box sx={{width:'90%',m:'auto'}}>
 <Typography
   sx={{
     color: '#BEBEBE',
@@ -29,7 +30,7 @@ function Education() {
   
 >
   My education has been a journey of self-discovered and growth. My educational details are as follows
-  </Typography>
+  </Typography></Box>
   <BSCS/>
   <Ics/>
   <Matric/>

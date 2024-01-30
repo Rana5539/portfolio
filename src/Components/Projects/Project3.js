@@ -1,17 +1,24 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const img = require('./images/Capture1.jpg')
 const data = [{text:'React js'},
 {text:'Material UI'},
 {text:'Hubspot'}
 ]
 function Project2() {
-  const project = 'https://build-jlwf.vercel.app/'
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
+  const project = 'https://build2-nu.vercel.app/'
   const onClick = () => {
     window.open(project, '_blank');
   };
   return (
-    <>
+    <><div data-aos='flip-left'>
 <Box sx={{
             width:'45vh', 
             height:'auto',  
@@ -71,7 +78,7 @@ function Project2() {
               borderRadius:'17px'}}>{a.text}</Box>
               ))}
             </Box>
-            </Box>
+            </Box></div>
     </>
   )
 }

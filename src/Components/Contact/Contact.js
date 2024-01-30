@@ -68,8 +68,8 @@ function Contact() {
     </Link>
 </Box>
 <Box sx={{m:'auto',mt:1}}>
-<Typography sx={{ color:'grey', fontFamily:'Poppins', fontSize:'14px'}}>
-    <CopyrightRoundedIcon sx={{color:'grey', fontSize:'14px'}}/>
+<Typography sx={{ color:'grey', fontFamily:'Poppins', fontSize:'14px',alignItems:'center',display:'flex'}}>
+    <CopyrightRoundedIcon sx={{color:'grey', fontSize:'15px'}}/>
     2023 Waqar Akram. All rights reserved
 </Typography>
 </Box>

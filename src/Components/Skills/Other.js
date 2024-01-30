@@ -1,5 +1,7 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const data = [
     {text:'Github', src: require('./images/icons8-github-48.png')},
     {text:'Vs code', src: require('./images/icons8-vs-code-48.png')}
@@ -7,8 +9,14 @@ const data = [
 const img = require('./images/icons8-git-48.png')
 
 function Other() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
+    <div data-aos='fade-right'>
     <Box sx={{
     width:'50vh', 
     height:'30vh', 
@@ -78,7 +86,7 @@ fontWeight:'300'}}>Others</Typography>
 <img src={img} style={{ width: '3vh', marginRight: 1 }}  alt="Skills"  />
   Git
 </Box>
-          </Box>
+          </Box></div>
     </>
   )
 }

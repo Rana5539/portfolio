@@ -3,7 +3,7 @@ import React from 'react'
 import Snackbar from '@mui/material/Snackbar';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-const img = require('./images/unnamed.jpg')
+
 const pdfUrl = require('./pdf/waqar.pdf')
 const handleButtonClick = () => {
   window.open(pdfUrl, '_blank');
@@ -47,12 +47,12 @@ function About() {
     height: '45vh',
     bgcolor: '#63C5DA',
     borderRadius: '50%',
-    backgroundImage: `url(${img})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    boxShadow: '0 0 15px 5px #63C5DA',
     '@media screen and (max-width: 1000px)': {
       mt:3, 
       width:'35vh',
@@ -62,6 +62,7 @@ function About() {
       display:'none'
     }
   }}
+  className='bg'
 >
 </Box>
         <Box sx={{width:'50%','@media screen and (max-width: 1000px)': {
@@ -71,9 +72,8 @@ function About() {
           },}}>
             <Typography sx={{color:'white', fontFamily:'Poppins', fontSize:'35px'}}>Hi, I am </Typography>
             <Typography sx={{color:'white', fontFamily:'Poppins', fontSize:'25px',lineHeight:1}}>Waqar Akram </Typography>
-            <Typography sx={{color:'#63C5DA', fontFamily:'Inria Sans'}}>Front end Developer</Typography>
-            <Typography sx={{color:'#63C5DA', fontFamily:'Inria Sans'}}>UI/UX designer</Typography>
-            <Typography sx={{color:'#BEBEBE', fontFamily:'Poppins', fontWeight:'300', fontSize:'14px',mt:1}}>I am a motivated and versatile individual, always eager to take new challenges. With a passion for learning. I am a dedicated individual for front end development and ui/ux designing, With a positive attitude and a growth mindset , i am ready to make a meaningful contribution and achieve great things. I always try to achieve 100% efficiency and accuracy in my work to impress my clients. To know further more about me contact me , check out my proven projects or scroll down  </Typography>
+            <Typography sx={{color:'#63C5DA', fontFamily:'Inria Sans'}}>React js Developer</Typography>
+            <Typography sx={{color:'#BEBEBE', fontFamily:'Poppins', fontWeight:'300', fontSize:'14px',mt:1}}>I am a motivated and versatile individual, always eager to take new challenges. With a passion for learning. I am a dedicated individual for web development, With a positive attitude and a  mindset of growing fast, i am ready to make a meaningful contribution and achieve great things. I always try to achieve 100% efficiency and accuracy in my work to impress my clients. To know further more about me contact me , check out my proven projects or scroll down  </Typography>
             <Box sx={{mt:2, display:'flex','@media screen and (max-width: 1000px)': {
  justifyContent:'space-evenly',
           },}}>
@@ -87,16 +87,17 @@ function About() {
     height: '45vh',
     bgcolor: '#63C5DA',
     borderRadius: '50%',
-    backgroundImage: `url(${img})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    boxShadow: '0 0 15px 5px #63C5DA',
     '@media screen and (max-width: 1000px)': {
       display:'none'
     },
   }}
+  className='bg'
 >
 </Box>
     </Box>
