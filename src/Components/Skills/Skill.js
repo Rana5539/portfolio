@@ -1,8 +1,7 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import Frontend from './Frontend'
-import Ui from './Ui'
-import Other from './Other'
+
 
 function Skill() {
   return (
@@ -42,9 +41,9 @@ alignItems:'center',
  flexDirection:'column',
           },}}>
 <Frontend/>
-<Ui/>
+
 </Box>
-<Other/>
+
     </>
   )
 }

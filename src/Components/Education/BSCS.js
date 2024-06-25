@@ -24,7 +24,7 @@ function BSCS() {
  width:'80%',
           },}}>
            <Box style={{ textAlign: 'center' }}>
-      <img src={img} width={'60vh'} style={{ margin: 'auto', display: 'block', marginTop:4}} alt="Your Image" />
+      <img src={img} width={'60vh'} style={{ margin: 'auto', display: 'block', marginTop:4}} alt="Your" />
     </Box>
   
         

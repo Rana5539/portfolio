@@ -1,20 +1,19 @@
-import { Box, Typography } from '@mui/material'
+import { Box} from '@mui/material'
 import React,{useEffect} from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const data = [{text:'React js', src:require('./images/physics.png')},
-               {text:'CSS', src: require('./images/css-3.png')},
-               {text:'HTML', src:require('./images/html-5.png')}
-            ]  
-            const data1 = [{text:'Bootstrap', src:require('./images/bootstrap.png')},
-               {text:'Tailwind', src: require('./images/icons8-tailwind-css-32.png')},
-               
-            ] 
-            const data2 = [{text:'Javascript', src:require('./images/java-script.png')},
-            {text:'Material UI', src: require('./images/icons8-material-ui-48.png')},
-            
-         ]  
-         const img = require('./images/icons8-chakra-ui-48.png')        
+const next = require('./images/iduLChSb1a.jpeg')
+          const reac = require('./images/react.png')  
+          const js = require('./images/js.png')
+         const mongo = require('./images/mongo.png') 
+         const vs = require('./images/pngwing.com.png')
+         const git = require('./images/git.png')
+         const github = require('./images/github.png')
+         const tail = require('./images/tail.png')
+         const css = require('./images/css.png')
+         const html = require('./images/html.png')
+         const mui = require('./images/mui.png') 
+         const figma = require('./images/fig.png')  
 function Frontend() {
   useEffect(() => {
     AOS.init({
@@ -25,120 +24,39 @@ function Frontend() {
     <>
     <div data-aos='zoom-in'>
     <Box sx={{
-    width:'50vh', 
-    height:'40vh', 
-    bgcolor:'rgb(0, 3, 20)', 
-    border:'1px dashed #63C5DA', 
+    p: 1,
+    width: 'auto',
+    height: 'auto',
+    bgcolor: 'rgb(0, 3, 20)',
+    border: '1px dashed #63C5DA',
     boxShadow: `0 4px 8px rgba(0, 123, 255, 0.3)`,
-    borderRadius:'15px',
-    textAlign:'center',
+    borderRadius: '15px',
+    
+                
+       
+    alignItems: 'center',       
     '@media screen and (max-width: 500px)': {
- width:'40vh',
-          },}}>
-<Typography sx={{
-color:'white',
-fontSize:'18px',
-mt:1,
-fontFamily:'Poppins',
-fontWeight:'300'}}>Frontend</Typography>
-<Box sx={{
-    display:'flex',
-    mx:'auto',
-    mt:1, 
-    width:'90%', 
-    justifyContent:'space-between'}}>
-    {data.map((a)=>(
-        <Box
-  sx={{
-    pl:1,pr:1,
-    height: '5vh',
-    border: '1px solid #63C5DA',
-    borderRadius: '10px',
-    color: '#BEBEBE',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontFamily:'Poppins',
-    fontWeight:'300'
-  }}
->
-    <img src={a.src} style={{width:'3vh',marginRight:1}} alt=''></img>
-  {a.text}
-</Box>
-    ))}   
-</Box>
-<Box  sx={{
-    display:'flex',
-    mx:'auto',
-    mt:2, 
-    width:'90%', 
-    justifyContent:'space-evenly'}}>
-        {data2.map((a)=>(
-        <Box
-  sx={{
-    pl:1,pr:1,
-    height: '5vh',
-    border: '1px solid #63C5DA',
-    borderRadius: '10px',
-    color: '#BEBEBE',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontFamily:'Poppins',
-    fontWeight:'300'
-  }}
->
-    <img src={a.src} style={{width:'3vh',marginRight:1}} alt=''></img>
-  {a.text}
-</Box>
-    ))}   
+        width: '40vh',
+    },
+}}>
+    <Box sx={{ display: 'flex', alignItems: 'center', mx:'auto', justifyContent:'center' , gap:2}}>
+        <img src={next} style={{ width: '15%', }} alt=''></img>
+        <img src={reac} style={{ width: '13%' }} alt=''></img>
+        <img src={js} style={{ width: '15%', }} alt=''></img>
+        <img src={mongo} style={{ width: '15%' }} alt=''></img>
     </Box>
-    <Box sx={{
-    display:'flex',
-    mx:'auto',
-    mt:2, 
-    width:'90%', 
-    justifyContent:'space-evenly'}}>
-{data1.map((a)=>(
-        <Box
-  sx={{
-    pl:1,pr:1,
-    height: '5vh',
-    border: '1px solid #63C5DA',
-    borderRadius: '10px',
-    color: '#BEBEBE',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontFamily:'Poppins',
-    fontWeight:'300'
-  }}
->
-    <img src={a.src} style={{width:'3vh',marginRight:1}} alt=''></img>
-  {a.text}
-</Box>
-    ))}   
-</Box>
-<Box
-  sx={{
-    width:'16vh',
-    pl:1,pr:1,
-    height: '5vh',
-    border: '1px solid #63C5DA',
-    borderRadius: '10px',
-    color: '#BEBEBE',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontFamily:'Poppins',
-    fontWeight:'300',
-    mt:1,
-    mx:'auto'
-  }}
->
-    <img src={img} style={{width:'3vh',marginRight:1}} alt='' ></img>
-  Chakra UI
-</Box>
+    <Box sx={{ display: 'flex', alignItems: 'center', mx:'auto',  mt:2,justifyContent:'center', gap:2 }}>
+    <img src={css} style={{ width: '15%', }} alt=''></img>
+        <img src={tail} style={{ width: '15%' }} alt=''></img>
+        <img src={figma} style={{ width: '15%', }} alt=''></img>
+        <img src={vs} style={{ width: '12%' }} alt=''></img>
+    </Box>
+    <Box sx={{ display: 'flex', alignItems: 'center', mx:'auto', mt:2,justifyContent:'center', gap:2 }}>
+    <img src={mui} style={{ width: '15%', }} alt=''></img>
+        <img src={git} style={{ width: '12%' }} alt=''></img>
+        <img src={github} style={{ width: '15%', }} alt=''></img>
+        <img src={html} style={{ width: '15%' }} alt=''></img>
+    </Box>
 </Box>
 </div>
     </>

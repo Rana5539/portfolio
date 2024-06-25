@@ -28,8 +28,9 @@ function Expr() {
 >
   My work experience as a software engineer and working on different companies and projects
   </Typography>
-  <Inter/>
+  
   <Fiverr/>
+  <Inter/>
     </>
   )
 }

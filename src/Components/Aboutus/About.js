@@ -70,9 +70,9 @@ function About() {
             mt:2,
             width:'100%'
           },}}>
-            <Typography sx={{color:'white', fontFamily:'Poppins', fontSize:'35px'}}>Hi, I am </Typography>
-            <Typography sx={{color:'white', fontFamily:'Poppins', fontSize:'25px',lineHeight:1}}>Waqar Akram </Typography>
-            <Typography sx={{color:'#63C5DA', fontFamily:'Inria Sans'}}>React js Developer</Typography>
+            <Typography sx={{color:'white', fontFamily:'Poppins', fontSize:'45px'}}>Hi, I am </Typography>
+            <Typography sx={{color:'white', fontFamily:'Poppins', fontSize:'35px',lineHeight:1}}>Waqar Akram </Typography>
+            <Typography sx={{color:'#63C5DA', fontFamily:'Inria Sans'}}>Full Stack Developer</Typography>
             <Typography sx={{color:'#BEBEBE', fontFamily:'Poppins', fontWeight:'300', fontSize:'14px',mt:1}}>I am a motivated and versatile individual, always eager to take new challenges. With a passion for learning. I am a dedicated individual for web development, With a positive attitude and a  mindset of growing fast, i am ready to make a meaningful contribution and achieve great things. I always try to achieve 100% efficiency and accuracy in my work to impress my clients. To know further more about me contact me , check out my proven projects or scroll down  </Typography>
             <Box sx={{mt:2, display:'flex','@media screen and (max-width: 1000px)': {
  justifyContent:'space-evenly',
