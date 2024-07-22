@@ -1,6 +1,5 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-import Matric from './Matric'
 import Ics from './Ics'
 import BSCS from './BSCS'
 function Education() {
@@ -33,7 +32,7 @@ function Education() {
   </Typography></Box>
   <BSCS/>
   <Ics/>
-  <Matric/>
+  
   
     </>
   )
