@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import React, { useEffect, lazy, Suspense } from 'react';
+import React, { useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -25,7 +25,8 @@ function Frontend() {
             borderRadius: '15px',
             alignItems: 'center',
             '@media screen and (max-width: 500px)': {
-              width: '40vh',
+              width: '48vh',
+              
             },
           }}
         >
@@ -33,15 +34,15 @@ function Frontend() {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              mx: 'auto',
+              
               justifyContent: 'center',
-              gap: 2,
+              gap: 1,
             }}
           >
-            <img width="auto" height="auto" src="https://img.icons8.com/nolan/128/html-5.png" alt="html-5"/>
-            <img width="auto" height="auto" src="https://img.icons8.com/nolan/128/css3.png" alt="css3"/>
-            <img width="auto" height="auto" src="https://img.icons8.com/nolan/128/react-native.png" alt="react-native"/>
-            <img width="auto" height="auto" src="https://img.icons8.com/nolan/128/javascript.png" alt="javascript"/>
+            <img width="100" height="auto" src="https://img.icons8.com/nolan/html-5.png" alt="html-5"/>
+            <img width="100" height="auto" src="https://img.icons8.com/nolan/css3.png" alt="css3"/>
+            <img width="100" height="auto" src="https://img.icons8.com/nolan/react-native.png" alt="react-native"/>
+            <img width="100" height="auto" src="https://img.icons8.com/nolan/javascript.png" alt="javascript"/>
             
 
 
@@ -51,31 +52,31 @@ function Frontend() {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              mx: 'auto',
+              
               mt: 2,
               justifyContent: 'center',
-              gap: 2,
+              gap: 1,
             }}
           >
-            <img width="auto" height="auto" src="https://img.icons8.com/color/144/mongodb.png" alt="mongodb"/>
-<img width="v" height="auto" src="https://img.icons8.com/fluency/144/tailwind_css.png" alt="tailwind_css"/>
-<img width="auto" height="auto" src="https://img.icons8.com/color/144/figma--v1.png" alt="figma--v1"/>
-<img width="auto" height="auto" src="https://img.icons8.com/color/144/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>         
+            <img width="100" height="auto" src="https://img.icons8.com/color/mongodb.png" alt="mongodb"/>
+<img width="100" height="auto" src="https://img.icons8.com/fluency/tailwind_css.png" alt="tailwind_css"/>
+<img width="100" height="auto" src="https://img.icons8.com/color/figma--v1.png" alt="figma--v1"/>
+<img width="100" height="auto" src="https://img.icons8.com/color/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>         
 </Box>
           <Box
             sx={{
               display: 'flex',
               alignItems: 'center',
-              mx: 'auto',
+              gap:1,
               mt: 2,
               justifyContent: 'center',
-              gap: 2,
+              
             }}
           >
-           <img width="auto" height="auto" src="https://img.icons8.com/color/144/material-ui.png" alt="material-ui"/>
-<img width="auto" height="auto" src="https://img.icons8.com/nolan/128/git.png" alt="git"/>
-<img width="auto" height="auto" src="https://img.icons8.com/nolan/128/github.png" alt="github"/>
-<img width="auto" height="auto" src="https://img.icons8.com/color/144/redux.png" alt="redux"/>
+           <img width="100" height="auto" src="https://img.icons8.com/color/material-ui.png" alt="material-ui"/>
+<img width="90" height="auto" src="https://img.icons8.com/nolan/git.png" alt="git"/>
+<img width="100" height="auto" src="https://img.icons8.com/nolan/github.png" alt="github"/>
+<img width="100" height="auto" src="https://img.icons8.com/color/redux.png" alt="redux"/>
           </Box>
         </Box>
       </div>
