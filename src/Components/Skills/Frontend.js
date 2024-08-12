@@ -25,7 +25,7 @@ function Frontend() {
             borderRadius: '15px',
             alignItems: 'center',
             '@media screen and (max-width: 500px)': {
-              width: '43vh',
+              width: '42vh',
               
             },
           }}

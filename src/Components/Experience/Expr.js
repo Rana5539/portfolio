@@ -2,6 +2,7 @@ import { Typography } from '@mui/material'
 import React from 'react'
 import Inter from './Inter'
 import Fiverr from './Fiverr'
+import AlMuqsit from './AliMuqsit'
 function Expr() {
   return (
     <>
@@ -28,7 +29,7 @@ function Expr() {
 >
   My work experience as a software engineer and working on different companies and projects
   </Typography>
-  
+  <AlMuqsit/>
   <Fiverr/>
   <Inter/>
     </>

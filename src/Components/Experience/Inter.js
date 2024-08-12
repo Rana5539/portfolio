@@ -24,11 +24,12 @@ function Inter() {
  width:'80%',
           },}}>
    <Box sx={{width:'95%', m:'auto',mt:1.5, display:'flex'}}>
-        <img src={img} alt=''></img>
+        <img src={img} alt='' width={80}></img>
         <Box sx={{ml:1}}>
             <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'300'}}>Frontend Interne</Typography>
             <Typography sx={{color: 'grey', fontSize:'15px', fontFamily:'Inria Sans', lineHeight:1}}>Degsol</Typography>
             <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans'}}>July 2023 - Nov 2023</Typography>
+            <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans'}}>Onsite</Typography>
         </Box>
    </Box>
    <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2 }}>Worked on the Frontend of the different web applications UI's.</Typography>

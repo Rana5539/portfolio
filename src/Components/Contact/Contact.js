@@ -35,6 +35,7 @@ function Contact() {
         borderTop:'1px dashed #63C5DA',
         boxShadow: `0 4px 8px rgba(0, 123, 255, 0.3)`}}>
         <Box sx={{m:'auto', textAlign:"center"}} >
+          
             <Typography sx={{
                 color:'#63C5DA', 
                 fontFamily:'Poppins', 

@@ -36,6 +36,7 @@ function Ics() {
    <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200',mt:2 , textAlign:'center',pl:1.1,pr:1.1}}>I have completed my intermediate in computer sciences from lahore garisson college</Typography>
    
     </Box></div>
+    
     </>
   )
 }

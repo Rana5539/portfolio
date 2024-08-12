@@ -4,7 +4,7 @@ import Modal from '@mui/material/Modal';
 import Project3 from './Project3'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const img = require('./images/cd.jpg')
+const img = require('./images/me.jpg')
 const data = [{text:'React js'},
 {text:'Material UI'},
 {text:'JavaScript'}

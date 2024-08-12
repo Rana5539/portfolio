@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material'
 import React,{useEffect} from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-const img = require('./images/dhives.jpg')
+const img = require('./images/al.jpg')
 function Fiverr() {
   useEffect(() => {
     AOS.init({
@@ -25,15 +25,17 @@ function Fiverr() {
           },}}>
    <Box sx={{width:'95%', m:'auto',mt:1.5, display:'flex'}}>
    <img src={img} width="80" alt="" style={{borderRadius: '50%', overflow: 'hidden'}}/>
+
         <Box sx={{ml:1}}>
             <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'300'}}>Frontend Developer</Typography>
-            <Typography sx={{color: 'grey', fontSize:'15px', fontFamily:'Inria Sans', lineHeight:1}}>DHives</Typography>
-            <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans'}}>Feb 2024 - Present</Typography>
-            <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans'}}>Onsite</Typography>
+            <Typography sx={{color: 'grey', fontSize:'15px', fontFamily:'Inria Sans', lineHeight:1}}>Al Muqsit Tech</Typography>
+            <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans'}}>Aug 2024 - Present</Typography>
+            <Typography sx={{color: 'grey', fontSize:'13px', fontFamily:'Inria Sans'}}>Remote</Typography>
+            
         </Box>
         
    </Box>
-   <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2, mr:0.5 }}> Working as a Frontend Developer on product named as apnimanzil.com.</Typography>
+   <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2, mr:0.5 }}> Working as a Frontend Developer</Typography>
    <Typography sx={{color:'white', fontFamily:'Poppins', fontWeight:'200', ml:3, mt:2, display:'flex'}}>Skills  <Typography sx={{ml:1, fontFamily:'Inria Sans', fontWeight:'200', color:'grey'}}>React , Next , JavaScript , Git & Github , Material UI</Typography></Typography>
     </Box></div>
     </>
